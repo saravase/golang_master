@@ -28,4 +28,10 @@ func main() {
 
 	fmt.Println(strings.Join([]string{s1, s2, s3}, " "))
 
+	var s6 strings.Builder
+	s6.WriteString(s1)
+	s6.WriteString(s2)
+	s6.WriteString(s3)
+	fmt.Println(s6.String())
+
 }
