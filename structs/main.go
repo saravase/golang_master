@@ -12,6 +12,7 @@ type person struct {
 }
 
 func main() {
+
 	p := person{
 		name:       "optimus",
 		fathername: "primz",
@@ -22,4 +23,21 @@ func main() {
 	}
 
 	fmt.Println(p)
+
+	var p1 person
+	p1.name = "primz"
+	p1.fathername = "optimus"
+	p1.gender = "female"
+	p1.age = 31
+	p1.height = 180
+	p1.weight = 50
+}
+
+func PrintPerson(p person){
+	fmt.Println(p.name)
+	fmt.Println(p.fathername)
+	fmt.Println(p.name)
+	fmt.Println(p.age)
+	fmt.Println(p.height)
+	fmt.Println(p.weight)
 }
